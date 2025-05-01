@@ -43,43 +43,39 @@
             </div>
         </div>
     </article>
-
-    <!-- Overview Section -->
-    <article id="overview" class="wrapper style2 bg-light">
-        <div class="container">
-            <header>
-                <h2>Overview</h2>
-                <p>LGBTQ+ rights and inclusion are vital issues in Filipino society, and social media platforms, such as Reddit, are key spaces for open expression and debate. This project seeks to analyze the sentiment and discourse surrounding LGBTQ+ issues in Filipino Reddit communities, with a particular focus on homophobic and inclusive content.</p>
-            </header>
-            <div class="row aln-center">
-                <div class="col-4 col-6-medium col-12-small">
-                    <section class="box style1">
-                        <span class="icon featured fa-comments"></span>
-                        <h3>Motivation</h3>
-                        <p>"Ang bakla, dapat hindi seryoso." These words reflect the prevailing stereotypes and prejudice that continue to permeate Filipino culture. Even in digital spaces like Reddit, biased views persist, shaping discourse around LGBTQ+ rights. Despite a vibrant LGBTQ+ culture, the Philippines still grapples with widespread discrimination.</p>
-                    </section>
-                </div>
-                <div class="col-4 col-6-medium col-12-small">
-                    <section class="box style1">
-                        <span class="icon solid featured fa-camera-retro"></span>
-                        <h3>Problem</h3>
-                        <p>LGBTQ+ discourse and homophobia shape societal attitudes in the Philippines. Reddit offers a platform for Filipino users to engage in discussions about LGBTQ+ issues, but homophobic content often coexists with supportive narratives. This creates a complex online environment for LGBTQ+ discourse.</p>
-                    </section>
-                </div>
-                <div class="col-4 col-6-medium col-12-small">
-                    <section class="box style1">
-                        <span class="icon featured fa-thumbs-up"></span>
-                        <h3>Solution</h3>
-                        <p>We propose a comprehensive analysis of Reddit posts to identify patterns in LGBTQ+ discourse using NLP techniques. This involves classifying posts as homophobic or non-homophobic and correlating sentiment with engagement metrics (e.g., comments, upvotes).</p>
-                    </section>
-                </div>
-            </div>
-            <footer>
-                <p>Uncovering the complexities of homophobia and inclusion in Filipino Reddit spaces.</p>
-                <a href="#data" class="button large scrolly">Explore Our Data</a>
-            </footer>
-        </div>
-    </article>
+	<div class="research-tabs">
+		<h2>Our Research Focus</h2>
+		<div class="tab-buttons">
+			<button class="tablink active" onclick="showTab('rq')">Research Questions</button>
+			<button class="tablink" onclick="showTab('hypothesis')">Hypothesis</button>
+			<button class="tablink" onclick="showTab('method')">Method</button>
+			<button class="tablink" onclick="showTab('solution')">Solution</button>
+		</div>
+		<div class="tab-content" id="rq">
+			<h3>Research Questions</h3>
+			<ul>
+				<li>Can Reddit posts containing LGBTQ+ related terms be automatically classified as homophobic or non-homophobic using NLP techniques?</li>
+				<li>What is the overall sentiment distribution in Reddit posts containing LGBTQ+ related terms?</li>
+				<li>What is the relationship between sentiment and engagement in posts using LGBTQ+ related terms?</li>
+			</ul>
+		</div>
+		<div class="tab-content" id="hypothesis" style="display:none">
+			<h3>Hypothesis</h3>
+			<ul>
+				<li>The features of posts classified as homophobic differ significantly from non-homophobic posts.</li>
+				<li>Negative sentiment is more prevalent than positive or neutral sentiment in LGBTQ+ Reddit posts.</li>
+				<li>Posts with negative or homophobic sentiment receive higher engagement (comments/upvotes) than other posts.</li>
+			</ul>
+		</div>
+		<div class="tab-content" id="method" style="display:none">
+			<h3>Method</h3>
+			<p>We use natural language processing for classification and sentiment analysis, and statistical tests to analyze relationships between variables.</p>
+		</div>
+		<div class="tab-content" id="solution" style="display:none">
+			<h3>Solution</h3>
+			<p>Our findings will inform advocacy efforts and online moderation strategies in Filipino Reddit communities.</p>
+		</div>
+	</div>
 
     <!-- Additional Sections for Data, Methods, Results, and Team -->
     <!-- You can add similar sections as needed, here’s an example for the Data Section -->
