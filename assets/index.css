@@ -199,6 +199,10 @@ img,video {
     display: none
 }
 
+.hidden {
+    display: none;
+}  
+
 *,:before,:after {
     --tw-border-spacing-x: 0;
     --tw-border-spacing-y: 0;
@@ -792,7 +796,7 @@ img,video {
 
 .text-neutral-800 {
     --tw-text-opacity: 1;
-    color: rgb(131 134 168 / var(--tw-text-opacity))
+    color: rgb(176 178 200 / var(--tw-text-opacity))
 }
 
 .text-primary {
@@ -801,7 +805,7 @@ img,video {
 
 .text-slate-700 {
     --tw-text-opacity: 1;
-    color: rgb(131 134 168 / var(--tw-text-opacity))
+    color: rgb(176 178 200 / var(--tw-text-opacity))
 }
 
 .text-white {
@@ -811,12 +815,12 @@ img,video {
 
 .text-zinc-700 {
     --tw-text-opacity: 1;
-    color: rgb(131 134 168 / var(--tw-text-opacity))
+    color: rgb(176 178 200 / var(--tw-text-opacity))
 }
 
 .text-zinc-800 {
     --tw-text-opacity: 1;
-    color: rgb(131 134 168 / var(--tw-text-opacity))
+    color: rgb(176 178 200 / var(--tw-text-opacity))
 }
 
 .underline {
@@ -874,12 +878,12 @@ img,video {
     --accent-green: #3BCB86;
     --accent-yellow: #FFA200;
     --accent-violet: #8E82F6;
-    --periwinkle: #8386A8;
-    --ggray: #8386a8;
+    --periwinkle: #b0b2c8;
+    --ggray: #b0b2c8;
     font-family: "DM Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 300;
-    color: #8386a8;
+    color: #b0b2c8;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -1425,3 +1429,48 @@ ul.custom-bullets.svelte-8ftu6v li.svelte-8ftu6v {
     display: block;
     border-bottom: 1px solid
 }
+
+.underline-tab {
+    all: unset;
+    position: relative;
+    cursor: pointer;
+    color: var(--periwinkle);
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.5; /* ⬅️ inactive state */
+  }
+  
+  .underline-tab:hover,
+  .tab-btn.active {
+    opacity: 1; /* ⬅️ full opacity on hover or if active */
+  }
+  
+  .underline-tab::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: var(--periwinkle);
+    transition: width 0.3s ease;
+  }
+  
+  .underline-tab:hover::after,
+  .tab-btn.active::after {
+    width: 100%;
+  }
+  
+  .text-periwinkle {
+    color: var(--periwinkle);
+  }
+  
+  .border-periwinkle {
+    border: 1.4px solid var(--periwinkle) !important;
+  }
+  
+  .hover-shadow-periwinkle:hover {
+    box-shadow: 0 0 12px var(--periwinkle);
+    background-color: rgba(255, 255, 255, 0.05); /* subtle glow */
+  }
