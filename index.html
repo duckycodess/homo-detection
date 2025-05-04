@@ -248,6 +248,75 @@
               
               
             </div>
+            <div class="bg-spacecadet px-12 py-14 rounded-lg shadow-lg mt-16 space-y-4">
+              <h2 class="text-4xl">PREPROCESSING </h2>
+              <p>This is an additional data section. You can describe a different dataset or display a continuation of the previous one here.</p>
+            
+              <h2 class="text-4xl"> Steps in Preprocessing </h3>
+            
+              <div class="space-y-6 text-gray-100">
+                <div>
+                  <h4 class="font-semibold text-lg text-white">1. Scraping Reddit Posts</h4>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Collected Reddit posts using keyword-based search queries.</li>
+                    <li>Included metadata such as title, body, author, permalink, timestamp, and subreddit.</li>
+                  </ul>
+                </div>
+            
+                <div>
+                  <h4 class="font-semibold text-lg text-white">2. Cleaning Text Data</h4>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Removed unnecessary characters such as hyperlinks, symbols, and formatting tags from titles and bodies.</li>
+                    <li>Standardized all text to lowercase to ensure uniformity across entries.</li>
+                    <li>This cleaning allowed us to focus solely on relevant textual content for downstream analysis.</li>
+                  </ul>
+                </div>
+            
+                <div>
+                  <h4 class="font-semibold text-lg text-white">3. Translating to English</h4>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Translated posts written in Tagalog to English to ensure compatibility with our NLP models.</li>
+                    <li>This step was critical for enabling accurate sentiment detection and classification tasks.</li>
+                  </ul>
+                </div>
+            
+                <div>
+                  <h4 class="font-semibold text-lg text-white">4. Handling Missing Values</h4>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Inspected columns with potential missing values, such as the <code>body</code> field.</li>
+                    <li>Removed posts that lacked essential information (e.g., missing body content) due to deletion or removal.</li>
+                    <li>This filtering step preserved the integrity and quality of our dataset.</li>
+                  </ul>
+                </div>
+            
+                <div>
+                  <h4 class="font-semibold text-lg text-white">5. Tokenization and Stop Word Removal</h4>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Segmented text into individual tokens to allow term-level analysis.</li>
+                    <li>Removed commonly used English stop words (e.g., “the”, “is”, “at”) using NLTK’s predefined stop word list.</li>
+                    <li>This ensured we retained only the most meaningful and relevant words related to gender-based violence.</li>
+                  </ul>
+                </div>
+            
+                <div>
+                  <h4 class="font-semibold text-lg text-white">6. Sentiment Analysis (VADER)</h4>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Used the <a class="cutelink" href="https://github.com/cjhutto/vaderSentiment">VADER</a> sentiment analysis tool to determine emotional tone for each post.</li>
+                    <li>Generated a compound sentiment score to represent the overall polarity of text content.</li>
+                  </ul>
+                </div>
+            
+                <div>
+                  <h4 class="font-semibold text-lg text-white">7. Homophobia Flagging (Hugging Face Model)</h4>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>Applied a pretrained language model from <a class="cutelink" href="https://huggingface.co/IMSyPP/hate_speech_targets_nl">Hugging Face</a> to detect posts that might contain homophobic language.</li>
+                    <li>Flagged posts with a binary label to facilitate further filtering and analysis on hate speech.</li>
+                  </ul>
+                </div>
+            
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
