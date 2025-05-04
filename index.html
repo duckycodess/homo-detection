@@ -41,13 +41,15 @@
               </p>
               <div>
                 <a href="#background" class="downicon flex align-center gap-2">
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" style="color: currentColor;" stroke-width="0" class="" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"></path></svg>
                   <span class="text-xl ml-2">Explore Our Study</span>
                 </a>
               </div>
             </div>
-            <div class="rounded-lg object-contain mt-12 md:mt-[-20px]">
-              <img src="images/pic00.jpg" alt="Insert image description here" class="rounded-lg object-contain">
-            </div>
+
+              <div class="md:w-5/12 mt-12 md:mt-0 flex justify-center">
+                <img src="images/pride.jpg" class="rounded-lg max-w-xs w-full">
+            </div>            
           </div>
         </div>
       </section>
@@ -65,18 +67,18 @@
             </div>
             
           </div>
-          <div id="overview" class="tab-content">
+          <div id="overview" class="tab-content text-lg">
             LGBTQ+ rights and inclusion remain vital issues within Filipino society, and online spaces such as Reddit often serve as platforms for open expression and discussion. 
             Our project centers on understanding how LGBTQ+ discourse evolves in Filipino Reddit communities, with a focus on the prevalence of homophobic content. 
             By analyzing these conversations, we aim to identify patterns of inclusion and prejudice, offering insights that can inform more effective advocacy, support systems, and educational efforts for the LGBTQ+ community
           </div>
-          <div id="problem" class="tab-content hidden">
+          <div id="problem" class="tab-content hidden text-lg">
             <span style="font-weight: bold; color: #6F729B;">RSQ 1:</span> Can Reddit posts containing LGBTQ+ related terms be automatically classified as homophobic or non-homophobic using NLP techniques?
             <br><span style="font-weight: bold; color: #6F729B;">RSQ 2:</span> What is the overall sentiment distribution in Reddit posts containing LGBTQ+ related terms?
             <br><span style="font-weight: bold; color: #6F729B;">RSQ 3:</span> What is the relationship between sentiment and engagement in posts using LGBTQ+ related terms?
           </div>
           
-          <div id="hypothesis" class="tab-content hidden"><b> <p><strong>We hypothesize that:</strong></p> <br>
+          <div id="hypothesis" class="tab-content hidden text-lg"><b> <p><strong>We hypothesize that:</strong></p>
             <ul>
               <li>
                 <strong>Sentiment Distribution</strong> — Sentiment in Reddit posts containing LGBTQ+ related terms is not uniformly distributed; certain sentiments (e.g., positive, negative, or neutral) may appear more frequently, reflecting general attitudes within the platform’s communities.
@@ -85,7 +87,7 @@
                 <strong>Sentiment-Engagement Relationship</strong> — Posts with specific sentiment tones (such as highly positive or strongly negative) are likely to receive different levels of engagement (e.g., upvotes, comments), suggesting a potential relationship between emotional tone and community interaction.
               </li>
             </ul></b></div>
-          <div id="solution" class="tab-content hidden">Insert solution content</div>
+          <div id="solution" class="tab-content hidden text-lg">Insert solution content</div>
         </div>
       </section>
 
@@ -98,7 +100,13 @@
               The dataset was compiled by scraping over 1,500 posts from Philippine-based subreddits, using keywords related to LGBTQ+ issues and various expressions of homophobia as search terms.
             </p>
             <div class="flex flex-wrap gap-4 mb-32">
-              <a href="data/preprocessed_dataset.csv" download class="rounded-full bg-periwinkle px-4 py-2 text-white">Download Dataset 1</a>
+              <a href="data/preprocessed_dataset.csv" download class="flex items-center gap-2 rounded-full bg-periwinkle px-4 py-2 text-white w-fit">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
+                  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"></path>
+                </svg>
+                <span>preprocessed_dataset.csv</span>
+              </a>
             </div>
           </div>
           <div class="md:w-7/12">
@@ -220,13 +228,13 @@
               <h2 class="text-4xl">Data Collection Process</h2>
               <p>The posts were filtered based on specific search inputs related to the LGBTQ+ community. The search inputs used are as follows:</p>
               <div class="flex flex-wrap gap-2 mt-4">
-                <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">bading</a>
-                <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">bakla</a>
-                <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">tomboy</a>
-                <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">homophobic</a>
-                <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">trans</a>
-                <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">gay</a>
-                <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">lesbian</a>
+                <a href="" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">bading</a>
+                <a href="" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">bakla</a>
+                <a href="" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">tomboy</a>
+                <a href="" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">homophobic</a>
+                <a href="" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">trans</a>
+                <a href="" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">gay</a>
+                <a href="" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">lesbian</a>
               </div>
               <div>
                 <br> <p>The originally scraped dataset contains:</p><br>
@@ -355,26 +363,43 @@
 
           <!-- Tab Contents -->
           <div id="holiday" class="tab-content mt-12 space-y-6">
-            <h2 class="text-center text-4xl md:text-6xl">1</h2>
+            <h2 class="text-center text-4xl md:text-6xl">Research Question #1</h2>
             <img src="images/rsq1.png" class="rounded-lg mx-auto md:w-10/12">
             <p class="text-center">This word cloud shows that the word "Gay" is the most common word among posts that were detected as homophobic.</p>
           </div>
 
           <div id="year" class="tab-content hidden mt-12 space-y-6">
-            <h2 class="text-center text-4xl md:text-6xl">2</h2>
+            <h2 class="text-center text-4xl md:text-6xl">Research Question #2</h2>
             <img src="images/rsq2.png" class="rounded-lg mx-auto md:w-10/12">
             <p class="text-center">This bar graph shows the distribution of sentiment across Reddit posts that include LGBTQ+ related terms. Out of all posts analyzed, a majority (1,054) were classified as positive, indicating supportive or affirming language. Negative posts totaled 444, reflecting hostile or critical sentiment, while only 18 posts were identified as neutral. This suggests that most discourse surrounding LGBTQ+ topics in this Reddit dataset leans toward positivity, with a notable, but smaller, presence of negative sentiment.</p>
           </div>
 
           <div id="day" class="tab-content hidden mt-12 space-y-6">
-            <h2 class="text-center text-4xl md:text-6xl">3</h2>
+            <h2 class="text-center text-4xl md:text-6xl">Research Question #3</h2>
             <img src="images/rsq3-1.png" class="rounded-lg mx-auto md:w-10/12">
             <img src="images/rsq3-2.png" class="rounded-lg mx-auto md:w-10/12">
-            <p class="text-center">Insert summary of findings here.</p>
+            <div class="text-center space-y-4">
+              <p>
+                Both scatter plots explore how sentiment scores relate to user engagement on Reddit posts mentioning LGBTQ+ terms—measured through upvote ratio and number of comments.
+              </p>
+            
+              <ul class="list-disc list-inside text-left max-w-3xl mx-auto">
+                <li>
+                  <strong><b>Sentiment vs. Number of Comments:</b></strong> Most posts received a low number of comments regardless of whether their sentiment was negative, neutral, or positive. While a few highly negative and highly positive posts stand out with more comments, there's no clear visual trend that links sentiment with higher engagement.
+                </li>
+                <li>
+                  <strong><b>Sentiment vs. Upvote Ratio:</b></strong> The majority of posts—across all sentiment scores—cluster around high upvote ratios. The distribution of sentiment is wide, but upvote behavior appears largely consistent, showing no strong pattern based on emotional tone.
+                </li>
+              </ul>
+            
+              <p>
+                Overall, the graphs suggest that sentiment has little visible effect on how users interact with LGBTQ+-related posts in terms of voting and commenting.
+              </p>
+            </div>            
           </div>
 
           <div id="month" class="tab-content hidden mt-12 space-y-6">
-            <h2 class="text-center text-4xl md:text-6xl">Nutshell</h2>
+            <h2 class="text-center text-4xl md:text-6xl">Nutshell Plot</h2>
             <img src="images/nutshell.png" class="rounded-lg mx-auto md:w-10/12">
             <p class="text-center">Mean combined engagement scores (based on normalized comment counts and upvote ratios) for Reddit posts, grouped by sentiment and homophobia classification. Neutral, non-homophobic posts exhibit the highest average engagement, while homophobic posts of all sentiments receive lower engagement overall. This suggests that the community responds most strongly to neutral discussions that are non-homophobic in nature.
             </p>
@@ -450,19 +475,22 @@
             <div class="md:w-8/12 flex flex-col text-periwinkle"><h2 class="mb-3 text-[2em] text-left">
               <span class="gradient-title">Gabby Sacramento</span>🧸</h2>
               <p class="md:text-lg text-left">
-                greeting
+                Hey, I'm Gabby! 😊 
                 <br>
                 <br>
-                paragraph1
-                <a class="cutelink" href="https://www.facebook.com/100000211194115/videos/1483317855906156/">link</a>
-                cont. of paragraph1
+                I’m a Computer Science sophomore at UP Diliman, currently exploring UI/UX design and 
+                web development. I’m still early in the process and learning as I go, 
+                but I’m excited about where it’s heading! I’ve always been passionate 
+                about graphic design and was really into STEM back in high school, so I’m looking forward to 
+                finding creative ways to blend both worlds. Right now, I’m loving the challenge of turning ideas into real, 
+                interactive interfaces—even if I’m still figuring things out along the way.
                 <br>
                 <br>
-                paragraph2
+                Outside of tech, I’m into all things 2000s—movies, TV shows, music, and games. I’m also a huge cat person. 😸
               </p>
             </div>
             <div class="rounded-lg sm:w-4/12 sm:order-last order-first">
-                <img class="rounded-2xl m-auto" src="./images/pic00.jpg">
+                <img class="rounded-2xl m-auto" src="./images/gabby.jpg">
             </div>
           </div>
         </div>
