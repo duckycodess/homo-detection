@@ -1292,4 +1292,15 @@ ul li {
     transition: transform 0.3s ease;
   }
   
+  .box-default {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .box-light {
+    box-shadow: 0 4px 10px rgba(26, 24, 53, 0.5);
+  }
+
+  .text-shadow {
+    text-shadow: 0 4px 10px rgba(26, 24, 53, 0.15); /* tweak as needed */
+  }
   

@@ -13,7 +13,7 @@
     <main>
         <!-- HEADER / HERO SECTION -->
       <section class="bg-oxfordblue-100 py-6">
-        <nav class="items-center rounded-lg bg-spacecadet shadow-sm px-8 mx-6 py-5">
+        <nav class="items-center rounded-lg bg-spacecadet shadow-sm px-8 mx-6 py-5 box-default">
           <div class="flex justify-between">
             <div class="flex">
               <div class="font-semibold flex items-center text-slate-700 md:text-xl">Indigo</div>
@@ -56,7 +56,7 @@
 
       <!-- BACKGROUND SECTION -->
       <section id="background" class="bg-oxfordblue-100">
-        <div class="flex flex-col align-center mx-6 bg-spacecadet rounded-2xl py-16 px-8 md:px-48 space-y-2">
+        <div class="flex flex-col align-center mx-6 bg-spacecadet rounded-2xl py-16 px-8 md:px-48 space-y-2 box-default">
           <h1 class="text-center text-4xl md:text-6xl">Our Research Focus</h1>
           <div class="nav-links text-center space-x-2 md:text-lg text-sm">
             <div class="nav-links text-center space-x-2 md:text-lg text-sm mt-4">
@@ -100,13 +100,15 @@
       </section>
 
       <!-- DATA SECTION -->
-      <section id="data" class="bg-oxfordblue-100">
+      <section id="data" class="bg-oxfordblue-100 box-default">
         <div class="md:flex md:mx-6 rounded-2xl py-16 md:px-12 px-8 md:space-x-10">
-          <div class="md:w-5/12">
+          
+          <div class="md:w-5/12 sticky top-20 self-start h-fit">
             <h1 class="text-4xl mb-4 pt-16">About Our Dataset</h1>
             <p class="text-xl mb-8">
               The dataset was compiled by scraping over 1,500 posts from Philippine-based subreddits, using keywords related to LGBTQ+ issues and various expressions of homophobia as search terms.
             </p>
+
             <div class="flex flex-wrap gap-4 mb-32">
               <a href="data/preprocessed_dataset.csv" download class="flex items-center gap-2 rounded-full bg-periwinkle px-4 py-2 text-white w-fit">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -117,9 +119,10 @@
               </a>
             </div>
           </div>
+          
           <div class="md:w-7/12">
             <!-- <img src="image/DatasetTable.png" alt="Insert dataset image alt text" class="shadow-lg rounded-md"> -->
-            <div class="bg-spacecadet px-12 py-14 rounded-lg shadow-lg mt-16 space-y-4">
+            <div class="bg-spacecadet px-12 py-14 rounded-lg shadow-lg mt-16 space-y-4 box-default">
               <h2 class="text-4xl">Description of the Dataset</h2>
               <p>The dataset consists of Reddit posts collected from the following subreddits:</p>
 
@@ -265,7 +268,7 @@
               
             </div>
 
-            <div class="bg-spacecadet px-12 py-14 rounded-lg shadow-lg mt-16 space-y-4">
+            <div class="bg-spacecadet px-12 py-14 rounded-lg shadow-lg mt-16 space-y-4 box-default">
               <h2 class="text-4xl">PREPROCESSING </h2>
               <p>INSERT PREPROCESSING INTRO HERE</p>
             
@@ -355,7 +358,7 @@
 
       <!-- RESULTS SECTION -->
       <section id="results" class="bg-oxfordblue-100 pb-20">
-        <div class="flex flex-col align-center mx-6 bg-spacecadet rounded-2xl px-12 py-12">
+        <div class="flex flex-col align-center mx-6 bg-spacecadet rounded-2xl px-12 py-12 box-default">
           
           <!-- Heading and Tab Buttons -->
           <div class="flex justify-between items-center flex-wrap pb-6">
@@ -419,7 +422,7 @@
 
       <!-- MODEL SECTION -->
       <section class="bg-periwinkle text-white px-12 py-16">
-        <p class="text-2xl font-semibold gradient-light">MODEL</p>
+        <p class="text-2xl font-semibold gradient-light text-shadow">MODEL</p>
         <div class="md:w-8/12 space-y-4">
           <h2 class="md:text-5xl text-2xl">Insert Model Name</h2>
           <p class="md:text-xl">Insert model purpose and description here.</p>
@@ -440,9 +443,9 @@
       <section id="team" class="bg-periwinkle">
         <div class="text-periwinkle text-center py-12 space-y-14">
           <h1 class="pt-4 md:text-7xl gradient m-auto gradient-light
-          pb-4">MEET THE TEAM</h1>
+          pb-4 text-shadow">MEET THE TEAM</h1>
 
-          <div class="flex flex-col sm:flex-row bg-spacecadet flex-row md:w-100vw justify-center gap-4 bg-[#fffcf8] rounded-lg md:w-9/12 w-10/12 m-auto p-6">
+          <div class="flex flex-col sm:flex-row bg-spacecadet flex-row md:w-100vw justify-center gap-4 bg-[#fffcf8] rounded-lg md:w-9/12 w-10/12 m-auto p-6 box-light">
             <div class="md:w-8/12 flex flex-col text-periwinkle"><h2 class="mb-3 text-[2em] text-left">
               <span class="gradient-title">TJ Noval</span>🐣</h2>
               <p class="md:text-lg text-left">
@@ -460,7 +463,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col sm:flex-row bg-spacecadet flex-row md:w-100vw justify-center gap-4 bg-[#fffcf8] rounded-lg md:w-9/12 w-10/12 m-auto p-6">
+          <div class="flex flex-col sm:flex-row bg-spacecadet flex-row md:w-100vw justify-center gap-4 bg-[#fffcf8] rounded-lg md:w-9/12 w-10/12 m-auto p-6 box-light">
             <div class="md:w-8/12 flex flex-col text-periwinkle"><h2 class="mb-3 text-[2em] text-left">
               <span class="gradient-title">Jarl Ricaforte</span>🫧</h2>
               <p class="md:text-lg text-left">
@@ -479,7 +482,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col sm:flex-row bg-spacecadet flex-row md:w-100vw justify-center gap-4 bg-[#fffcf8] rounded-lg md:w-9/12 w-10/12 m-auto p-6">
+          <div class="flex flex-col sm:flex-row bg-spacecadet flex-row md:w-100vw justify-center gap-4 bg-[#fffcf8] rounded-lg md:w-9/12 w-10/12 m-auto p-6 box-light">
             <div class="md:w-8/12 flex flex-col text-periwinkle"><h2 class="mb-3 text-[2em] text-left">
               <span class="gradient-title">Gabby Sacramento</span>🧸</h2>
               <p class="md:text-lg text-left">
