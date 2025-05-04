@@ -227,7 +227,26 @@
                 <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">trans</a>
                 <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">gay</a>
                 <a href="https://github.com/cessbub/cs132-project/tree/main/dataset" target="_blank" class="rounded-full px-4 py-1 text-xs font text-periwinkle border-periwinkle hover-shadow-periwinkle transition duration-200 ease-in-out">lesbian</a>
-              </div>              
+              </div>
+              <div>
+                <br> <p>The originally scraped dataset contains:</p><br>
+                <ul>
+                  <li><strong>Subreddit</strong>: The subreddit from which the post originated.</li>
+                  <li><strong>Title</strong>: The title of the post.</li>
+                  <li><strong>Original Body</strong>: The main content of the post before preprocessing.</li>
+                  <li><strong>Preprocessed Body</strong>: The main content of the post after preprocessing.</li>
+                  <li><strong>Author</strong>: Author of the post</li>
+                  <li><strong>Link</strong>: The link URL that directs to the post.</li>
+                  <li><strong>Created</strong>: Date when the post was created.</li>
+                  <li><strong>Num_Comments</strong>: Number of comments on the post.</li>
+                  <li><strong>Upvote_Ratio</strong>: Upvote ratio of the post.</li>
+                  <li><strong>Sentiment</strong>: The sentiment label (e.g., positive, negative, or neutral) assigned to the post using the VADER sentiment analysis tool. </li>
+                  <li><strong>Compound_Score</strong>: The overall sentiment score computed by VADER, ranging from -1 (most negative) to +1 (most positive).</li>
+                  <li><strong>Homophobia Flag</strong>: Homophobia indicator assigned using a Hugging Face model to flag whether the post contains homophobic content.</li>
+                </ul>
+              </div>
+              
+              
             </div>
           </div>
         </div>
