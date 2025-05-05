@@ -389,7 +389,6 @@
           <div id="year" class="tab-content hidden mt-12 space-y-6">
             <h2 class="text-center text-4xl md:text-6xl">Research Question #2</h2>
             <img src="images/rsq2.png" class="rounded-lg mx-auto md:w-10/12">
-            <p class="text-center">This bar graph shows the distribution of sentiment across Reddit posts that include LGBTQ+ related terms. Out of all posts analyzed, a majority (1,054) were classified as positive, indicating supportive or affirming language. Negative posts totaled 444, reflecting hostile or critical sentiment, while only 18 posts were identified as neutral. This suggests that most discourse surrounding LGBTQ+ topics in this Reddit dataset leans toward positivity, with a notable, but smaller, presence of negative sentiment.</p>
             <div class="text-left max-w-3xl mx-auto space-y-4">
               <p>To assess whether sentiment is evenly distributed in Reddit posts related to LGBTQ+ topics, 
                 a <span class="font-bold">Chi-Square Goodness-of-Fit Test</span> was conducted.</p>
@@ -418,16 +417,10 @@
                 <br> <br> Since the p-value is less than 0.05, we reject the null hypothesis.
 
               </p>
-              <p>
-                This shows that sentiment in LGBTQ+ related Reddit posts is not uniformly distributed. 
-                Positive sentiment is dominant, while neutral sentiment appears significantly underrepresented.
-                <span class="font-bold">no significant relationship</span> 
-                between sentiment score and number of comments received.
-              </p>
             </div>
           
             <p>
-              The results show that sentiment in Reddit posts about LGBTQ+ topics isn’t evenly spread. 
+              The results show that sentiment in Reddit posts about LGBTQ+ topics <span class="font-bold">not uniformly distributed.</span> <br>
               Positive sentiment clearly stands out, while neutral posts are very few. 
               The statistical test confirms this difference is significant, meaning it’s not just due to chance. In short, people on Reddit tend to talk about LGBTQ+ issues in a mostly positive way, with far fewer posts taking a neutral or negative tone.
 
@@ -495,6 +488,12 @@
                 </p>
               </div>
 
+        </div>
+        <div id="month" class="tab-content hidden mt-12 space-y-6">
+          <h2 class="text-center text-4xl md:text-6xl">Nutshell Plot</h2>
+          <img src="images/nutshell.png" class="rounded-lg mx-auto md:w-10/12">
+          <p class="text-center">Mean combined engagement scores (based on normalized comment counts and upvote ratios) for Reddit posts, grouped by sentiment and homophobia classification. Neutral, non-homophobic posts exhibit the highest average engagement, while homophobic posts of all sentiments receive lower engagement overall. This suggests that the community responds most strongly to neutral discussions that are non-homophobic in nature.
+          </p>
         </div>
       </section>      
 
