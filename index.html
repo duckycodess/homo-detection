@@ -396,34 +396,62 @@
             <h2 class="text-center text-4xl md:text-6xl">Research Question #3</h2>
             <img src="images/rsq3-1.png" class="rounded-lg mx-auto md:w-10/12">
             <img src="images/rsq3-2.png" class="rounded-lg mx-auto md:w-10/12">
-            <div class="text-center space-y-4">
-              <p>
-                Both scatter plots explore how sentiment scores relate to user engagement on Reddit posts mentioning LGBTQ+ terms—measured through upvote ratio and number of comments.
-              </p>
-            
-              <ul class="list-disc list-inside text-left max-w-3xl mx-auto">
-                <li>
-                  <strong><b>Sentiment vs. Number of Comments:</b></strong> Most posts received a low number of comments regardless of whether their sentiment was negative, neutral, or positive. While a few highly negative and highly positive posts stand out with more comments, there's no clear visual trend that links sentiment with higher engagement.
-                </li>
-                <li>
-                  <strong><b>Sentiment vs. Upvote Ratio:</b></strong> The majority of posts—across all sentiment scores—cluster around high upvote ratios. The distribution of sentiment is wide, but upvote behavior appears largely consistent, showing no strong pattern based on emotional tone.
-                </li>
-              </ul>
-            
-              <p>
-                Overall, the graphs suggest that sentiment has little visible effect on how users interact with LGBTQ+-related posts in terms of voting and commenting.
-              </p>
-            </div>            
-          </div>
 
-          <div id="month" class="tab-content hidden mt-12 space-y-6">
-            <h2 class="text-center text-4xl md:text-6xl">Nutshell Plot</h2>
-            <img src="images/nutshell.png" class="rounded-lg mx-auto md:w-10/12">
-            <p class="text-center">Mean combined engagement scores (based on normalized comment counts and upvote ratios) for Reddit posts, grouped by sentiment and homophobia classification. Neutral, non-homophobic posts exhibit the highest average engagement, while homophobic posts of all sentiments receive lower engagement overall. This suggests that the community responds most strongly to neutral discussions that are non-homophobic in nature.
-            </p>
-          </div>
+              <div class="text-center space-y-6">
+                <p>
+                  This section explores whether sentiment in LGBTQ+ related Reddit posts is associated with two engagement metrics: 
+                  <span class="font-bold">Upvote Ratio</span> and 
+                  <span class="font-bold">Number of Comments</span>. 
+                  Given that both variables were not normally distributed (Shapiro-Wilk p-values &lt; 0.0001), 
+                  we used the non-parametric <span class="font-bold">Spearman rank correlation</span> 
+                  to assess monotonic relationships.
+                </p>
+              
+                <div class="text-left max-w-3xl mx-auto space-y-4">
+                  <p class="font-bold">Hypotheses:</p>
+                  <ul class="list-disc list-inside">
+                    <li>
+                      <span class="font-bold">H₀ (Null Hypothesis):</span> There is no relationship 
+                      between sentiment score and engagement metrics.
+                    </li>
+                    <li>
+                      <span class="font-bold">H₁ (Alternative Hypothesis):</span> There is a significant 
+                      relationship between sentiment score and engagement metrics.
+                    </li>
+                  </ul>
+              
+                  <p class="font-bold">1. Sentiment Score vs. Upvote Ratio</p>
+                  <p>
+                    Spearman correlation: ρ = 0.038<br>
+                    p-value = 0.1366
+                  </p>
+                  <p>
+                    Since p &gt; 0.05, we fail to reject the null hypothesis. 
+                    This means there is 
+                    <span class="font-bold">no statistically significant relationship</span> 
+                    between sentiment and upvote ratio.
+                  </p>
+              
+                  <p class="font-bold">2. Sentiment Score vs. Number of Comments</p>
+                  <p>
+                    Spearman correlation: ρ = –0.047<br>
+                    p-value = 0.0700
+                  </p>
+                  <p>
+                    Again, p &gt; 0.05, so we fail to reject the null hypothesis. 
+                    This suggests 
+                    <span class="font-bold">no significant relationship</span> 
+                    between sentiment score and number of comments received.
+                  </p>
+                </div>
+              
+                <p>
+                  Overall, statistical analysis supports what is seen in the scatter plots: 
+                  <span class="font-bold">sentiment has little to no observable impact on post engagement</span>, 
+                  whether in terms of votes or comment activity.
+                </p>
+              </div>
 
-          
         </div>
       </section>      
 
