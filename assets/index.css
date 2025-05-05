@@ -1308,3 +1308,22 @@ ul li {
     text-shadow: 0 4px 10px rgba(26, 24, 53, 0.15); /* tweak as needed */
   }
   
+  .dl-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    background-color: rgb(176, 178, 200); /* your periwinkle */
+    color:#1A1835;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    font-size: 0.875rem;
+  }
+  
+  .dl-btn:hover {
+    background-color: rgb(176, 178, 200); /* reapply same color */
+    color: #1A1835; /* keep text color */
+    box-shadow: 0 0 20px 5px rgba(176, 178, 200, 0.5); /* glow */
+  }
+  

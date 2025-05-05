@@ -101,23 +101,22 @@
 
       <!-- DATA SECTION -->
       <section id="data" class="bg-oxfordblue-100 box-default">
-        <div class="md:flex md:mx-6 rounded-2xl py-16 md:px-12 px-8 md:space-x-10">
-          
-          <div class="md:w-5/12 sticky top-20 self-start h-fit">
-            <h1 class="text-4xl mb-4 pt-16">About Our Dataset</h1>
-            <p class="text-xl mb-8">
-              The dataset was compiled by scraping over 1,500 posts from Philippine-based subreddits, using keywords related to LGBTQ+ issues and various expressions of homophobia as search terms.
-            </p>
+        <div class="md:flex flex-row items-start md:mx-6 rounded-2xl py-16 md:px-12 px-8 md:space-x-10 md:relative z-20 justify-between">
+          <div class="md:w-5/12 text-xs md:sidebar rounded-2xl md:sticky md:top-0 py-4">
+              <h1 class="text-4xl mb-4 pt-16">About Our Dataset</h1>
+              <p class="text-xl mb-8">
+                The dataset was compiled by scraping over 1,500 posts from Philippine-based subreddits, using keywords related to LGBTQ+ issues and various expressions of homophobia as search terms.
+              </p>
 
-            <div class="flex flex-wrap gap-4 mb-32">
-              <a href="data/preprocessed_dataset.csv" download class="flex items-center gap-2 rounded-full bg-periwinkle px-4 py-2 text-white w-fit">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
-                  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"></path>
-                </svg>
-                <span>preprocessed_dataset.csv</span>
-              </a>
-            </div>
+              <div class="flex flex-wrap gap-4 mb-32">
+                <a href="data/preprocessed_dataset.csv" download class="dl-btn">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"></path>
+                  </svg>
+                  <span>preprocessed_dataset.csv</span>
+                </a>
+              </div>
           </div>
           
           <div class="md:w-7/12">
@@ -258,19 +257,19 @@
               <div>
                 <br> <p>The originally scraped dataset contains:</p><br>
                 <ul>
-                  <li><strong>Subreddit</strong>: The subreddit from which the post originated.</li>
-                  <li><strong>Title</strong>: The title of the post.</li>
-                  <li><strong>Original Body</strong>: The main content of the post before preprocessing.</li>
-                  <li><strong>Preprocessed Body</strong>: The main content of the post after preprocessing.</li>
-                  <li><strong>Author</strong>: Author of the post</li>
-                  <li><strong>Link</strong>: The link URL that directs to the post.</li>
-                  <li><strong>Created</strong>: Date when the post was created.</li>
-                  <li><strong>Num_Comments</strong>: Number of comments on the post.</li>
-                  <li><strong>Upvote_Ratio</strong>: Upvote ratio of the post.</li>
-                  <li><strong>Sentiment</strong>: The sentiment label (e.g., positive, negative, or neutral) assigned to the post using the <a class="cutelink" href="https://github.com/cjhutto/vaderSentiment">VADER</a> sentiment analysis tool. </li>
-                  <li><strong>Compound_Score</strong>: The overall sentiment score computed by <a class="cutelink" href="https://github.com/cjhutto/vaderSentiment">VADER</a>, ranging from -1 (most negative) to +1 (most positive).</li>
-                  <li><strong>Homophobia Flag</strong>: Homophobia indicator assigned using a <a class="cutelink" href="https://huggingface.co/IMSyPP/hate_speech_targets_nl">Hugging Face</a> model to flag whether the post contains homophobic content.</li>
-                </ul>
+                  <li><strong class="font-bold">Subreddit</strong>: The subreddit from which the post originated.</li>
+                  <li><strong class="font-bold">Title</strong>: The title of the post.</li>
+                  <li><strong class="font-bold">Original Body</strong>: The main content of the post before preprocessing.</li>
+                  <li><strong class="font-bold">Preprocessed Body</strong>: The main content of the post after preprocessing.</li>
+                  <li><strong class="font-bold">Author</strong>: Author of the post.</li>
+                  <li><strong class="font-bold">Link</strong>: The link URL that directs to the post.</li>
+                  <li><strong class="font-bold">Created</strong>: Date when the post was created.</li>
+                  <li><strong class="font-bold">Num_Comments</strong>: Number of comments on the post.</li>
+                  <li><strong class="font-bold">Upvote_Ratio</strong>: Upvote ratio of the post.</li>
+                  <li><strong class="font-bold">Sentiment</strong>: The sentiment label assigned using <a class="cutelink" href="https://github.com/cjhutto/vaderSentiment">VADER</a>.</li>
+                  <li><strong class="font-bold">Compound_Score</strong>: The overall sentiment score computed by <a class="cutelink" href="https://github.com/cjhutto/vaderSentiment">VADER</a>.</li>
+                  <li><strong class="font-bold">Homophobia Flag</strong>: Indicator assigned using a <a class="cutelink" href="https://huggingface.co/IMSyPP/hate_speech_targets_nl">Hugging Face</a> model.</li>
+                </ul>                
               </div>
               
               
@@ -440,10 +439,11 @@
       <!-- CONCLUSION SECTION -->
       <section class="bg-oxfordblue-100">
         <div class="md:text-xl mx-6 rounded-2xl md:px-12 py-12">
-          <header class="text-center md:w-8/12 mx-auto mt-16">
+          <header class="text-center md:w-8/12 mx-auto mt-8">
             <h1 class="md:text-7xl">Insert Conclusion Title</h1>
             <p>Insert summary of findings, insights, and reflections here.</p>
           </header>
+          <br>
         </div>
       </section>
 
@@ -455,7 +455,7 @@
 
           <div class="flex flex-col sm:flex-row bg-spacecadet flex-row md:w-100vw justify-center gap-4 bg-[#fffcf8] rounded-lg md:w-9/12 w-10/12 m-auto p-6 box-light">
             <div class="md:w-8/12 flex flex-col text-periwinkle"><h2 class="mb-3 text-[2em] text-left">
-              <span class="gradient-title">TJ Noval</span>🐣</h2>
+              <span class="gradient-title">TJ Noval </span>🐣</h2>
               <p class="md:text-lg text-left">
                 Hello, I am Tj!
                 <br>
@@ -473,7 +473,7 @@
 
           <div class="flex flex-col sm:flex-row bg-spacecadet flex-row md:w-100vw justify-center gap-4 bg-[#fffcf8] rounded-lg md:w-9/12 w-10/12 m-auto p-6 box-light">
             <div class="md:w-8/12 flex flex-col text-periwinkle"><h2 class="mb-3 text-[2em] text-left">
-              <span class="gradient-title">Jarl Ricaforte</span>🫧</h2>
+              <span class="gradient-title">Jarl Ricaforte </span>🫧</h2>
               <p class="md:text-lg text-left">
                 Hi, I’m Jarl! 👋
                 <br>
@@ -492,7 +492,7 @@
 
           <div class="flex flex-col sm:flex-row bg-spacecadet flex-row md:w-100vw justify-center gap-4 bg-[#fffcf8] rounded-lg md:w-9/12 w-10/12 m-auto p-6 box-light">
             <div class="md:w-8/12 flex flex-col text-periwinkle"><h2 class="mb-3 text-[2em] text-left">
-              <span class="gradient-title">Gabby Sacramento</span>🧸</h2>
+              <span class="gradient-title">Gabby Sacramento </span>🧸</h2>
               <p class="md:text-lg text-left">
                 Hey, I'm Gabby! 😊 
                 <br>
