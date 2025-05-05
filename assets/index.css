@@ -576,6 +576,10 @@ img,video {
     background-color: var(--periwinkle)
 }
 
+.bg-periwinkle2 {
+    background-color: rgb(176 178 200 / var(--tw-bg-opacity))
+}
+
 .bg-oxfordblue-100 {
     --tw-bg-opacity: 1;
     background-color: rgb(7 5 36 / var(--tw-bg-opacity))
